@@ -72,8 +72,8 @@ Below are a few simple examples to illustrate how to use CryFold.
 
 ```
 conda activate CryFold
-wget -P ./example https://www.rcsb.org/fasta/entry/7xmv
 wget -P ./example https://ftp.ebi.ac.uk/pub/databases/emdb/structures/EMD-33306/map/emd_33306.map.gz
+wget https://www.rcsb.org/fasta/entry/7xmv -O ./example/rcsb_pdb_7XMV.fasta
 cd ./example
 gzip -d emd_33306.map.gz
 build -s rcsb_pdb_7XMV.fasta -v emd_33306.map -o out
