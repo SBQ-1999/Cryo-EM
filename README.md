@@ -1,6 +1,6 @@
-# Instructions for running the CryFold standalone package.
+# Instructions for running the CryFold standalone package
 
-##Overview
+## Overview
 CryFold is a software that automatically constructs full-atom 3D structural models of proteins based on cryo-EM density maps and sequence information.
 
 It has two main stages: the first step predicts the C<span>&alpha;</span> atom coordinates from the density map, and the second step builds the full-atom model by combining the sequence and density map information. Finally, the full-atom model will undergo a post-processing program to generate the final protein model. This post-processing program comes from [ModelAngelo](https://github.com/3dem/model-angelo/blob/main/model_angelo/gnn/flood_fill.py).
@@ -9,11 +9,11 @@ It has two main stages: the first step predicts the C<span>&alpha;</span> atom c
 
 For more details on CryFold, please refer to the Methods section in the manuscript.
 
-##Compute requirements
+## Compute requirements
 CryFold requires at least 3GB of disk space for its own weight files plus the weight files of the ESM language model. 
 It also requires at least 13GB of GPU memory.
 
-##Installation
+## Installation
 
 <details>
 <summary>Install CryFold</summary>
@@ -54,7 +54,7 @@ to check if the installation was successful.
 <br>
 </details>   
     
-##Usage
+## Usage
 
 First, use the command
 ```
