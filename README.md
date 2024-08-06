@@ -25,7 +25,7 @@ It requires to use conda to manage the Python dependencies, which can be install
 
 **Step 2: Clone this repository**
 
-Now, you can install ModelAngelo. First, you need to clone this Github repository with
+Now, you need to clone this Github repository with
 ```
 git clone https://github.com/SBQ-1999/CryFold.git
 ```
@@ -42,7 +42,7 @@ If you are in a cluster system, make sure that the node you are on has a GPU (th
 
 Navigate to the CryFold installation directory and run the installation script:
 ```
-cd ./CryFold/v1.0
+cd CryFold
 source install.sh
 ```
 Once the installation script has finished running, you will have an CryFold execution environment.
