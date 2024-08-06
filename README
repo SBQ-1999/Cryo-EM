@@ -3,7 +3,7 @@
 ##Overview
 CryFold is a software that automatically constructs full-atom 3D structural models of proteins based on cryo-EM density maps and sequence information.
 
-It has two main stages: the first step predicts the C¦Á atom coordinates from the density map, and the second step builds the full-atom model by combining the sequence and density map information. Finally, the full-atom model will undergo a post-processing program to generate the final protein model. This post-processing program comes from [ModelAngelo](https://github.com/3dem/model-angelo/blob/main/model_angelo/gnn/flood_fill.py).
+It has two main stages: the first step predicts the seealpha atom coordinates from the density map, and the second step builds the full-atom model by combining the sequence and density map information. Finally, the full-atom model will undergo a post-processing program to generate the final protein model. This post-processing program comes from [ModelAngelo](https://github.com/3dem/model-angelo/blob/main/model_angelo/gnn/flood_fill.py).
 
 <div align=center><img src="example/figure/framework.png" width="100%" height="100%"/></div>
 
