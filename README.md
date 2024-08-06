@@ -1,4 +1,4 @@
-# Instructions for running the CryFold standalone package
+# CryFold
 
 ## Overview
 CryFold is a software that automatically constructs full-atom 3D structural models of proteins based on cryo-EM density maps and sequence information.
