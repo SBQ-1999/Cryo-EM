@@ -70,12 +70,16 @@ Below are a few simple examples to illustrate how to use CryFold.
 <summary>Use a cryo-EM density map and a FASTA sequence</summary>
 <br>
 
+First, we need the density map and the fasta file:
 ```
-conda activate CryFold
 wget -P ./example https://ftp.ebi.ac.uk/pub/databases/emdb/structures/EMD-33306/map/emd_33306.map.gz
 wget https://www.rcsb.org/fasta/entry/7xmv -O ./example/rcsb_pdb_7XMV.fasta
 cd ./example
 gzip -d emd_33306.map.gz
+```
+Then, run CryFold:
+```
+conda activate CryFold
 build -s rcsb_pdb_7XMV.fasta -v emd_33306.map -o out
 ```
 </details> 
@@ -84,9 +88,13 @@ build -s rcsb_pdb_7XMV.fasta -v emd_33306.map -o out
 <summary>Extra use of mask map</summary>
 <br>
 
+let's assume we already have the density map and the fasta file. we also need to obtain the mask map:
 ```
 cd ./example
 wget https://ftp.ebi.ac.uk/pub/databases/emdb/structures/EMD-33306/masks/emd_33306_msk_1.map
+```
+Then, run CryFold:
+```
 build -s rcsb_pdb_7XMV.fasta -v emd_33306.map -m emd_33306_msk_1.map -o use_mask
 ```
 </details> 
